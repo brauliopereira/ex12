@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!--<link rel="stylesheet" href="css/style.css">-->
+<style>
+        .tituloh1{
+                background-color: darkgoldenrod;
+                font: 16px 'Arial', sans-serif;
+        }
+
+        .tituloh2{
+                margin: 0px;
+                font: 20px 'Arial', sans-serif;
+                font-weight: bold;
+
+        }
+
+        body{
+                font-family: arial, verdana, helvetica, sans-serif; /*colocando a font no body, define a tipografia padrão*/
+                font-size: 14px;
+                font-weight: bold;
+        }
+</style>
+
+</head>
+
+ 
+
+<body>
+ <h1 class="tituloh1">SISTEMA DE GESTÃO ACADÉMICA</h1>
+ <h2 class="tituloh2">MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h2>
+
+<form action="login.php" method="post">
+<p><label for="nome">Login</label> <input type="text" name="nome" id="nome" required size="20"
+                placeholder="" autocomplete="name" value=""></p>
+<p><label for="pw">Password</label> <input type="pw" name="pw" id="pw"></p>
+<p><label for="status">Status</label>
+        <select name="status" id="status">
+        <option value="">Inativo</option>
+        <option value="casado">Casado</option>
+        <option value="solteiro">Solteiro</option>
+        <option value="divorciado">Divorciado</option>
+        <option value="viuvo">Viúvo</option>
+        </select>
+        </p>
+
+        <p><label for="tipo">Tipo</label>
+                <label for="tipo">Técnico</label>
+                <input type="radio" id="tipo" name="tipo" checked>
+                <label for="tipo">Professor</label>
+                <input type="radio" id="tipo" name="tipo" checked>
+                <label for="tipo">Aluno</label>
+                <input type="radio" id="tipo" name="tipo" checked>
+                </p>
+
+                <p><label for="pw">Data Criação</label> <input type="dc" name="dc" id="dc"></p>
+                
+                <p><label for="perfil">Perfil</label>
+                <label for="perfil">Convidado</label>
+                        <input type="radio" id="genero" name="perfil" checked>
+                <label for="perfil">Administrador</label>
+                        <input type="radio" id="genero" name="perfil" checked>
+                        </p>
+
+                 <p><label for="observacoes">Observações</label><br>
+                        <textarea name="observacoes" id="observacoes" cols="30" rows="10"> </textarea>
+                        </p>
+                
+                <p><label for="modulos">Módulos</label>
+        
+                <label for="compras">Compras</label>
+                         <input type="checkbox" id="modulos" name="modulos">
+                <label for="biblioteca">Biblioteca</label>
+                         <input type="checkbox" id="modulos" name="modulos">
+                        </p>   
+                <label for="academico">Académico</label>
+                         <input type="checkbox" id="modulos" name="modulos">
+                        </p>     
+                <label for="documentacao">Documentação</label>
+                         <input type="checkbox" id="modulos" name="modulos">
+                        </p>       
+                <label for="recursoshumanos">Recursos Humanos</label>
+                        <input type="checkbox" id="modulos" name="modulos">
+                       </p>              
+
+                <p><input type="submit" value="Enviar"> <input type="reset" value="Limpar"></p>
+<!----->
+
+</form>
+</body>
+</html>
